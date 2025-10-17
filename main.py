@@ -220,13 +220,19 @@ class PDFViewer(QMainWindow):
         event.accept()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
+    import os
+    from PySide6.QtWidgets import QApplication
+    from PySide6.QtGui import QIcon
+
     app = QApplication(sys.argv)
 
-    # Tálca ikon beállítása
-    icon_path = os.path.join(os.path.dirname(__file__), "program.ico")
-    app.setWindowIcon(QIcon(icon_path))
-
+    # Az ikon Qt-nek, futás közben is
+    icon_path = os.path.join(os.path.dirname(sys.argv[0]), "program.ico")
+    icon = QIcon(icon_path)
+    app.setWindowIcon(icon)  # tálca
     viewer = PDFViewer()
+    viewer.setWindowIcon(icon)  # ablak teteje
     viewer.show()
+
     sys.exit(app.exec())
