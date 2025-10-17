@@ -31,7 +31,7 @@ class PDFViewer(QMainWindow):
 
     def initUI(self):
         self.setWindowTitle(' HZS PDF Megjelenítő 1.0')
-        self.setWindowIcon(QIcon("ikon.ico"))
+        self.setWindowIcon(QIcon(icon_path))
         self.setGeometry(100, 100, 1400, 820)
         self.apply_style()
         central_widget = QWidget()
@@ -222,6 +222,11 @@ class PDFViewer(QMainWindow):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
+
+    # Tálca ikon beállítása
+    icon_path = os.path.join(os.path.dirname(__file__), "program.ico")
+    app.setWindowIcon(QIcon(icon_path))
+
     viewer = PDFViewer()
     viewer.show()
     sys.exit(app.exec())
