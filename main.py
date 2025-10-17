@@ -221,18 +221,19 @@ class PDFViewer(QMainWindow):
 
 
 if __name__ == "__main__":
-    import os
-    from PySide6.QtWidgets import QApplication
-    from PySide6.QtGui import QIcon
-
     app = QApplication(sys.argv)
 
-    # Az ikon Qt-nek, futás közben is
-    icon_path = os.path.join(os.path.dirname(sys.argv[0]), "program.ico")
-    icon = QIcon(icon_path)
-    app.setWindowIcon(icon)  # tálca
+    import sys, os
+    def rp(name):
+        base = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
+        return os.path.join(base, name)
+
+    icon_path = rp("program.ico")
+
+    app.setWindowIcon(QIcon(icon_path))
     viewer = PDFViewer()
-    viewer.setWindowIcon(icon)  # ablak teteje
+    viewer.setWindowIcon(QIcon(icon_path))
     viewer.show()
 
-    sys.exit(app.exec())
+    sys.exit(app.exec_())
+
