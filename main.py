@@ -31,6 +31,7 @@ class PDFViewer(QMainWindow):
 
     def initUI(self):
         self.setWindowTitle(' HZS PDF Megjelenítő 1.0')
+        self.setWindowIcon(QIcon("ikon.ico"))
         self.setGeometry(100, 100, 1400, 820)
         self.apply_style()
         central_widget = QWidget()
