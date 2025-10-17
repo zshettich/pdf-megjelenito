@@ -1,4 +1,4 @@
-# PDF Explorer – Light Mode
+# HZS PDF Explorer
 
 ## Hallgató
 Név: Hettich Zsolt  
@@ -7,7 +7,7 @@ Neptunkód: ZAJDU4
 ---
 
 ## Feladat leírása
-Ez az alkalmazás egy modern, **Windows 11-szerű (Light Mode)** grafikus felületű **PDF-fájlkezelő és -megjelenítő**.  
+Ez az alkalmazás egy modern, **Windows 11-szerű ** grafikus felületű **PDF-fájlkezelő és -megjelenítő**.  
 A program a bal oldalon fájlrendszer-fát jelenít meg, a jobb oldalon pedig a kiválasztott PDF-dokumentumot.  
 A felhasználó lapozhat az oldalak között, nagyíthat, kicsinyíthet, illetve visszaállíthatja az eredeti nézetet.  
 A felső eszköztárban keresőmező is található, amellyel PDF-fájlokat lehet szűrni név alapján.
