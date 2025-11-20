@@ -14,13 +14,6 @@ A felső eszköztárban keresőmező is található, amellyel PDF-fájlokat lehe
 
 A feladat célja egy tanult és bemutatandó modulokra épülő, saját modult is tartalmazó, eseményvezérelt grafikus Python-alkalmazás létrehozása volt.
 
-A projekt megfelel a tantárgyi követelményeknek:
-- saját modul, osztály és függvény a monogrammal (`HZS`)
-- grafikus felület (PySide6)
-- eseménykezelés
-- fájlkezelés
-- nincs komment a beadandó kódban
-
 ---
 
 ## Modulok és a modulokban használt függvények
