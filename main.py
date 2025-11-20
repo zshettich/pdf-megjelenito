@@ -21,7 +21,7 @@ class HungarianFileSystemModel(QFileSystemModel):
         return super().headerData(section, orientation, role)
 
 
-class PDFViewer(QMainWindow):
+class HZS_PDFViewer(QMainWindow):
     def __init__(self):
         super().__init__()
         self.current_pdf = None
@@ -231,7 +231,7 @@ if __name__ == "__main__":
     icon_path = rp("program.ico")
 
     app.setWindowIcon(QIcon(icon_path))
-    viewer = PDFViewer()
+    viewer = HZS_PDFViewer()
     viewer.setWindowIcon(QIcon(icon_path))
     viewer.show()
 
